@@ -4,7 +4,7 @@
 
 After exploring multiple vim plugins and vim tips and tricks, I have finally managed to create and share unified vimrc configuration file.
 
-Of course there is far too much to explrore in vim so I will be updating this vimrc configuration continuously
+Of course there is far too much to explore in vim so I will be updating this vimrc configuration continuously
 
 ### Installation
 
@@ -84,7 +84,7 @@ $ sudo pip install pep8 flake8 pyflakes isort yapf
 You can replace .vimrc file present with your own .vimrc file present in your home directory.
 
 ```sh
-$ git clone 
+$ git clone https://github.com/rohan-97/vim-configuration.git
 $ cd vim-configuration
 $ cp -vp .vimrc $HOME/.vimrc
 $ cd ..
