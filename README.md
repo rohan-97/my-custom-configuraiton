@@ -97,7 +97,8 @@ $ :PluginInstall
 
 ### Plugins
 
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+Following is the list of plugins that I have used in my vimrc file.
+You can refer following list and can suggest more.
 
 | Plugin | README |
 | ------ | ------ |
@@ -125,7 +126,7 @@ I would be happy to hear about more awesome vim plugins
 ### Todos
 
  - Explore more plugins
- - Make vim one of the best plugin ever
+ - Make vim one of the best editor ever
 
 License
 ----
