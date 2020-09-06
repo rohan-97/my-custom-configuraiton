@@ -118,11 +118,38 @@ You can refer following list and can suggest more.
 | Git/mercurial/others diff icons on the side of the file lines | mhinz/vim-signify |
 | Python and other languages code checker | scrooloose/syntastic |
 
+# Tmux Configuration
+
+One change I have done for Tmux is that I have added branchname in right side of tmux status line.  
+and changed default colour scheme of tmux status line.  
+![status-bar](https://github.com/rohan-97/my-custom-configuraiton/blob/tmux-configuration/images/tmux-status-bar.PNG)
+
+In order to identify the branch name I wrote a shell script `git-branch-name` which accepts directory path as command line parameter and prints the branch name if the directory comes under git repository ortherwise prints nothing
+
+you can keep the `git-branch-name` script to any location, but if you add it to a location coming under PATH variable, then you can use git-branch-name as a command.
+
+the tmux configuration file (~/.tmux.conf) is quiet simple and following are it's contents
+
+```
+set -g status-right-length 100
+set -g status-style bg=default,fg=colour39
+set -g status-right "#[fg=colour46,bg=default]#(git-branch-name #{pane_current_path}) #[fg=colour39,bg=default]#{=21:pane_title} %I:%M %p %d-%b-%y"
+```
+
+Note : I have added the script `git-branch-name` under `/usr/local/bin` directory so I am using git-branch-name as a command, if you are keeping the script under non-PATH directory, then kindly provide absolute path for git-branch-name in the tmux.conf
+
+When you combine Tmux + Vim, you will get best development environment!
+
+Following is the screenshot of my terminal showig a glimpse of tmux and vim in action.
+
+![screenshot](https://github.com/rohan-97/my-custom-configuraiton/blob/tmux-configuration/images/Screenshot%20(88).png)
+
+
 ### Development
 
 Want to contribute? Great!
 please create your branches and raise pull requests.
-I would be happy to hear about more awesome vim plugins
+I would be happy to hear about more awesome plugins
 ### Todos
 
  - Explore more plugins
