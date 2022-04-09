@@ -1,0 +1,23 @@
+[global_config]
+  putty_paste_style = True
+[keybindings]
+[profiles]
+  [[default]]
+    visible_bell = True
+    icon_bell = False
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
+    font = Source Code Pro Semi-Bold 12
+    foreground_color = "#c5e4e8"
+    show_titlebar = False
+    use_system_font = False
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
